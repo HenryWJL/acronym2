@@ -13,12 +13,12 @@ def make_parser():
     )
     parser.add_argument(
         "--object_dir",
-        default="../data/grasps/objects",
+        default="",
         help="The directory used for loading objects."
     )
     parser.add_argument(
         "--mesh_dir",
-        default="../data/meshes/objects",
+        default="",
         help="The directory used for loading objects' meshes."
     )
     parser.add_argument(
