@@ -22,32 +22,32 @@ def make_parser():
     )
     parser.add_argument(
         "--object_dir",
-        default="../data/grasps/objects/test",
+        default="",
         help="The directory used for loading graspable objects and their grasps."
     )
     parser.add_argument(
         "--object_mesh_dir",
-        default="../data/meshes/objects/test",
+        default="",
         help="The directory used for loading graspable objects' meshes."
     )
     parser.add_argument(
         "--support_mesh_dir",
-        default="../data/meshes/supports",
+        default="",
         help="The directory used for loading supporting objects' meshes."
     )
     parser.add_argument(
         "--gripper_path",
-        default="../data/franka_gripper_collision_mesh.stl",
+        default="config/franka_gripper_collision_mesh.stl",
         help="The gripper mesh used for collision check."
     )
     parser.add_argument(
         "--grasp_save_dir",
-        default="../data/grasps/scenes/test",
+        default="",
         help="The directory used for saving scene grasps."
     )
     parser.add_argument(
         "--mesh_save_dir",
-        default="../data/meshes/scenes/test",
+        default="",
         help="The directory used for saving scene meshes."
     )
     parser.add_argument(
