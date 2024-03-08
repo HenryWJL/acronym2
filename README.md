@@ -9,13 +9,13 @@ Extend Acronym dataset to multi-object scenes
 - [Manifold](https://github.com/hjwdzh/Manifold)
 3. Customize `config/category.txt` to include whatever objects you want. Thereafter, sample the objects from datasets by running:
 ```python
-python sample_mesh.py --object_dir <where_hdf5_are_stored> --mesh_dir <where_obj_are_stored>
+python sample_mesh.py --object_dir <where_hdf5_are_stored> --mesh_dir <where_obj_are_stored> --object_save_dir <...> --mesh_save_dir <...>
 ```
-4. Generate and simplify the watertight versions of the meshes. Note that the process may sometimes fail when simplifying meshes, which would cause outliers. To handle these outliers, we simply remove them. Here we provide a shell script to complete the aforementioned procedures. Please open the script and modify the paths before running the following command.
+4. Create and simplify the watertight versions of meshes. Modify the paths in `process.sh` to your own and run:
 ```bash
-bash postprocess.sh
+bash process.sh
 ```
-5. Generate scenes.
+5. Generate multi-object scenes.
 ```python
 python generate_scene.py
 ```
