@@ -2,12 +2,14 @@
 Extend Acronym dataset to multi-object scenes
 
 ## Usage
-1. Download [ACRONYM](https://github.com/NVlabs/acronym).
-2. Download [ShapeNetSem](https://huggingface.co/datasets/ShapeNet/ShapeNetSem-archive/tree/main).
-3. Sample objects from specified categories. You can customize `category.txt` to include the objects you want.
+1. Download *Acronym* and *ShapeNetSem*
+- [ACRONYM](https://github.com/NVlabs/acronym)
+- [ShapeNetSem](https://huggingface.co/datasets/ShapeNet/ShapeNetSem-archive/tree/main)
+2. Install and build *Manifold*
+- [Manifold](https://github.com/hjwdzh/Manifold)
+3. Customize `config/category.txt` to include whatever objects you want. Thereafter, sample the objects from datasets by running:
 ```python
-cd dataset
-python sample_mesh.py
+python sample_mesh.py --object_dir <where_hdf5_are_stored> --mesh_dir <where_obj_are_stored>
 ```
 4. Generate and simplify the watertight versions of the meshes. Note that the process may sometimes fail when simplifying meshes, which would cause outliers. To handle these outliers, we simply remove them. Here we provide a shell script to complete the aforementioned procedures. Please open the script and modify the paths before running the following command.
 ```bash
