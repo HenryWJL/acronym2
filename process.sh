@@ -39,3 +39,4 @@ done <  $outlier_path
 echo "Completed"
 rm -f $log_path
 rm -f $outlier_path
+cd $acronym_dir
