@@ -8,12 +8,12 @@ def make_parser():
     )
     parser.add_argument(
         "--log_path",
-        default="/home/wangjunlin/project/log.txt",
+        default="./log.txt",
         help="The log file used for recording the terminal's output."
     )
     parser.add_argument(
         "--outlier_save_path",
-        default="/home/wangjunlin/project/outlier.txt",
+        default="./outlier.txt",
         help="The file used for storing the outliers."
     )
     return parser
