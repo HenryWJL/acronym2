@@ -13,27 +13,27 @@ def make_parser():
     )
     parser.add_argument(
         "--category",
-        default="../data/category.txt",
+        default="config/category.txt",
         help="The .txt file used for loading specified object categories."
     )
     parser.add_argument(
         "--object_dir",
-        default="../data/grasps",
+        default="",
         help="The directory used for loading objects."
     )
     parser.add_argument(
         "--mesh_dir",
-        default="../data/meshes",
+        default="",
         help="The directory used for loading meshes."
     )
     parser.add_argument(
         "--object_save_dir",
-        default="../data/grasps/objects",
+        default="",
         help="The directory used for storing sampled objects."
     )
     parser.add_argument(
         "--mesh_save_dir",
-        default="../data/meshes/objects",
+        default="",
         help="The directory used for storing sampled meshes."
     )
     parser.add_argument(
