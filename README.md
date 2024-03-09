@@ -1,5 +1,5 @@
-# Acronym2
-Extend Acronym dataset to multi-object scenes
+# Acronym++
+The original *Acronym* dataset only contains single-object data. This project extends *Acronym* to multi-object scenes using the methods suggested by the authors of *Acronym*.
 
 ## Usage
 ### Download
@@ -14,7 +14,8 @@ Modify `config/category.txt` to include whatever objects you want. Only the spec
 ### Start Now
 ```bash
 bash start.sh </.../acronym2> </.../Manifold> <where_h5> <where_obj> 0.02 10 1000 2000
-
+```
+```
 Arguments (in order):
     The absolute path of acronym2
     The absolute path of Manifold
@@ -26,4 +27,5 @@ Arguments (in order):
     The total number of samples in the generated dataset
 ```
 ### Other Options
-If you want to split the whole dataset into training, validation, and testing sets, please refer to `train_val_test_split.py`.
+1. You can use other supporting objects just by moving the meshes of objects into `supports` directory.
+2. If you want to split the whole dataset into training, validation, and testing datasets, please refer to `train_val_test_split.py`. 
