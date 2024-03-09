@@ -1,5 +1,5 @@
 # Acronym++
-[***Acronym***](https://github.com/NVlabs/acronym) dataset only contains single-object data, which is insufficient when cluttered environments are required. In this project, we extend ***Acronym*** to multi-object scenes using the methods suggested by the original authors. Follow the pipeline, you can create a custom dataset of your own.
+[***Acronym***](https://github.com/NVlabs/acronym) dataset only contains single-object data, which is insufficient when cluttered environments are required. In this project, we extend ***Acronym*** to multi-object scenes using the methods suggested by the original authors. Follow the instructions below, you can create a custom dataset of your own.
 
 ## Requirements
 ```
@@ -12,7 +12,7 @@ Download ***Acronym*** and ***ShapeNetSem*** datasets
 - [ACRONYM](https://drive.google.com/file/d/1zcPARTCQx2oeiKk7a-wdN_CN-RUVX56c/view)
 - [ShapeNetSem](https://huggingface.co/datasets/ShapeNet/ShapeNetSem-archive/tree/main)
 ### Install
-Install and build ***Manifold***. Please follow the instructions on the web page below.
+Install and build ***Manifold***. Please follow the instructions on the web page.
 - [Manifold](https://github.com/hjwdzh/Manifold)
 ### Customize Your Dataset
 Modify `config/category.txt` to include whatever objects you want. Only the specified objects will appear in the generated dataset.
