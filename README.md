@@ -13,7 +13,7 @@ python sample_mesh.py --object_dir <where_hdf5_are_stored> --mesh_dir <where_obj
 ```
 4. Transform meshes into simplified watertight versions. Modify the paths in `process.sh` and run:
 ```bash
-bash process.sh
+bash process.sh </.../acronym2> </.../Manifold> <where_.h5> <where_.obj>
 ```
 5. Generate multi-object scenes:
 ```python
