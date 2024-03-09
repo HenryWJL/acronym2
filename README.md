@@ -1,8 +1,9 @@
-# acronym_2.0
+# Acronym2
 Extend Acronym dataset to multi-object scenes
 
 ## Usage
-1. Download ***Acronym*** and ***ShapeNetSem***
+### Download
+Download *Acronym* and *ShapeNetSem* datasets
 - [ACRONYM](https://github.com/NVlabs/acronym)
 - [ShapeNetSem](https://huggingface.co/datasets/ShapeNet/ShapeNetSem-archive/tree/main)
 2. Install and build ***Manifold***
