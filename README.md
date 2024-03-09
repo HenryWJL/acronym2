@@ -1,5 +1,10 @@
 # Acronym++
-[***Acronym***](https://github.com/NVlabs/acronym) dataset only contains single-object data. In this project, we extend ***Acronym*** to multi-object scenes using the methods suggested by the original authors.
+[***Acronym***](https://github.com/NVlabs/acronym) dataset only contains single-object data, which is insufficient when cluttered environments are required. In this project, we extend ***Acronym*** to multi-object scenes using the methods suggested by the original authors. Follow the pipeline, you can create a custom dataset of your own.
+
+## Requirements
+```
+pip install -r requirements.txt
+```
 
 ## Usage
 ### Download
