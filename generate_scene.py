@@ -66,9 +66,9 @@ def make_parser():
         help="The number of grasps per scene.",
     )
     parser.add_argument(
-        "--num_train_sample",
+        "--num_sample",
         default=2000,
-        help="The number of generated training samples.",
+        help="The number of generated samples.",
     )
     return parser
 
@@ -94,7 +94,7 @@ def main(argv=sys.argv[1:]):
     assert len(supports) != 0, "No supporting object available!"
     assert args.num_object <= len(objects), "Too many objects per scene!"
     
-    for sample_idx in range(1, args.num_train_sample + 1):
+    for sample_idx in range(1, args.num_sample + 1):
         # randomly sample graspable objects and supporting objects
         objects_sample = random.sample(objects, args.num_object)
         supports_sample = random.sample(supports, 1)[0]
