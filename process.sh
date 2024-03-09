@@ -7,7 +7,7 @@ mesh_dir=$4            # where you store downloaded mesh data (.obj files)
 support_scale=$5       # a scaling ratio, depending on the supporting object itself
 objects_per_scene=$6   # how many objects in a scene
 grasps_per_scene=$7    # how many grasps preserved in a scene
-samples=$8             # how many samples to generate
+total_samples=$8       # how many samples to generate
 log_path=$acronym_dir/log.txt
 outlier_path=$acronym_dir/outlier.txt
 
@@ -59,10 +59,11 @@ cd $acronym_dir
 python generate_scene.py --object_dir $object_grasp_dir \
 --object_mesh_dir $object_mesh_dir --support_mesh_dir $acronym_dir/supports \
 --grasp_save_dir $scene_grasp_dir --mesh_save_dir $scene_mesh_dir \
---support_scale 
---num_object $objects_per_scene --num_grasp $grasps_per_scene --num_sample
+--support_scale $support_scale --num_object $objects_per_scene \
+--num_grasp $grasps_per_scene --num_sample $total_samples
 
-echo "Completed"
+echo "Completed!"
 rm -f $log_path
 rm -f $outlier_path
-cd $acronym_dir
+rm -f -r $object_grasp_dir
+rm -f -r $object_mesh_dir
