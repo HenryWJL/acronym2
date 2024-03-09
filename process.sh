@@ -12,7 +12,6 @@ log_path=$acronym_dir/log.txt
 outlier_path=$acronym_dir/outlier.txt
 
 ### prepare directories
-cd $acronym_dir
 mkdir -p data/grasps/objects
 mkdir -p data/grasps/scenes
 mkdir -p data/meshes/objects
