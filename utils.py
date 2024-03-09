@@ -379,8 +379,8 @@ def load_mesh(filename, mesh_root_dir, scale=None):
         mesh_scale = data["object_scale"] if scale is None else scale
     elif filename.endswith(".h5"):
         data = h5py.File(filename, "r")
-        mesh_fname = data["object/file"][()].decode('utf-8')  #.split('/')[2]  # 这里加了.split('/')[2]是因为存储的路径格式是“./dir_name/file.obj”，
-        mesh_scale = data["object/scale"][()] if scale is None else scale   # 而我们只需要后面的“file.obj”作为我们的路径
+        mesh_fname = data["object/file"][()].decode('utf-8').split('/')[2]  
+        mesh_scale = data["object/scale"][()] if scale is None else scale   
     else:
         raise RuntimeError("Unknown file ending:", filename)
 
