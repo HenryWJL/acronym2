@@ -4,7 +4,7 @@ Extend Acronym dataset to multi-object scenes
 ## Usage
 ### Download
 Download *Acronym* and *ShapeNetSem* datasets
-- [ACRONYM](https://github.com/NVlabs/acronym)
+- [ACRONYM](https://drive.google.com/file/d/1zcPARTCQx2oeiKk7a-wdN_CN-RUVX56c/view)
 - [ShapeNetSem](https://huggingface.co/datasets/ShapeNet/ShapeNetSem-archive/tree/main)
 ### Install
 Install and build *Manifold*. Please follow the instructions on the web page below.
@@ -13,7 +13,7 @@ Install and build *Manifold*. Please follow the instructions on the web page bel
 Modify `config/category.txt` to include whatever objects you want. Only the specified objects will appear in the generated dataset.
 ### Start Now
 ```bash
-bash process.sh </.../acronym2> </.../Manifold> <where_h5> <where_obj> 0.02 10 1000 2000
+bash start.sh </.../acronym2> </.../Manifold> <where_h5> <where_obj> 0.02 10 1000 2000
 
 Arguments (in order):
     The absolute path of acronym2
@@ -25,4 +25,5 @@ Arguments (in order):
     The number of grasps preserved in a scene
     The total number of samples in the generated dataset
 ```
-
+### Other Options
+If you want to split the whole dataset into training, validation, and testing sets, please refer to `train_val_test_split.py`.
