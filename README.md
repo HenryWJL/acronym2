@@ -34,3 +34,4 @@ Arguments (in order):
 ### Other Options
 1. You can use other supporting objects just by moving the meshes of objects into `supports` directory.
 2. If you want to split the whole dataset into training, validation, and testing datasets, please refer to `train_val_test_split.py`. 
+3. You can load "torch.Tensor" data from the generated dataset using `load_data.py`.

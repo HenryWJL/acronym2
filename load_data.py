@@ -6,7 +6,7 @@ from glob import glob
 from torch.utils.data import Dataset
 from pytorch3d.ops import knn_points, knn_gather
 
-from .acronym import load_mesh, load_grasps
+from .utils import load_mesh, load_grasps
 
 
 class GraspDataset(Dataset):

@@ -12,7 +12,7 @@ import numpy as np
 import trimesh.path
 from glob import glob
 
-from acronym import Scene, load_mesh, load_grasps
+from .utils import Scene, load_mesh, load_grasps
 
 
 def make_parser():
