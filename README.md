@@ -1,11 +1,6 @@
 # Acronym++
 This repository is adapted from [*Acronym*](https://github.com/NVlabs/acronym), a large-scale synthesized benchmark for grasp pose detection. In the original dataset, however, only samples of single object are provided, while diverse scenes with multiple objects are inaccessible. In this codebase, we provide users with several wrapped tools to synthesize hundreds of thousands of training and testing samples. By running a few lines of commands, you can easily generate your own custom dataset!
 
-## Requirements
-```
-
-```
-
 ## Installation
 ### 1. Download Datasets
 Download *Acronym* and *ShapeNet* datasets from web.
