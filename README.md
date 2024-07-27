@@ -3,7 +3,7 @@ This repository is adapted from [*Acronym*](https://github.com/NVlabs/acronym), 
 
 ## Requirements
 ```
-pip install -r requirements.txt
+
 ```
 
 ## Installation
@@ -14,9 +14,14 @@ Download *Acronym* and *ShapeNet* datasets from web.
 ### 2. Build from Source
 Follow the instructions in the codebase below to build *Manifold* from source.
 - [Manifold](https://github.com/hjwdzh/Manifold)
-### 3. Customize your Dataset
+### 3. Install Requirements
+```bash
+pip install -r requirements.txt
+```
+## Usage
+### 1. Customize your Dataset
 Modify `configs/category.txt` to include whatever objects you want. Only objects specified in this file will occur in your dataset.
-### 4. Generate your Dataset
+### 2. Generate your Dataset
 Now you can generate your own dataset just by running the following command.
 ```bash
 bash start_pipeline.sh </**/acronym2> </**/Manifold> <h5_dir> <obj_dir> 0.02 10 1000 10000
@@ -32,7 +37,7 @@ Arguments:
     The number of grasps per scene.
     The total number of samples.
 ```
-### Other Options
+### Options
 1. If you want to use other supporting objects, just move the meshes of the supporting objects into `supports` directory.
 2. If you want to split the whole dataset into training, validation, and testing sets, just run `scripts/train_val_test_split.py`. 
 3. For data loading, refer to `scripts/load_data.py`.
